@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="prueba">
+	
+</div>
+
+<button onclick="mostrarTexto();">Mostrar Texto</button>
+<button onclick="cambiarColor();">Cambiar Color</button>
+
+<script>
+	var prueba = document.getElementById('prueba');
+
+	function mostrarTexto(){
+		prueba.innerHTML ='Hola Mundo';
+		prueba.style.backgroundColor ="red";
+	}
+	function cambiarColor(){
+		prueba.style.backgroundColor = "blue";
+
+	}
+</script>
+<div id="nombre" onmouseenter="fontSize();" "onmouseleave="fontSizeLeave();">
+	<h1>
+		Holis
+	</h1>
+</div>
+
+<button onclick="sumerNumeros('Hola este numero es' ,5");>Mostrar resultados</button>
+<script>
+	var prueba = document.getElementById('prueba');
+
+	function sumarNumeros(numUno, numDos){
+		alert('hola alerta' + numUno + numDos);
+		console.log('Esto se imprime en consola' + numDos);
+	}
+
+	function fontSize(){
+		document.getElementById('nombre').style.fontSize = '40px';
+	}
+	function fontSizeLeave(){
+		document.getElementById('nombre').style.fontSize = '20 px'
+	}
+</script>
+</body>
+</html>
